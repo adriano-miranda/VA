@@ -1,0 +1,70 @@
+Memoria Mejora P1:
+
+Después de mostrar una imagen con showImage presionar una tecla (barra espaciadora por ejemplo) para cerrarla.
+Comentar varias líneas de código: Ctrl +K , Ctrl +C  
+Descomentar varias líneas de código: Ctrl+k, Ctrl+U
+
+-equalizeIntensity:
+
+        Funcionaba anteriormente, no lo he tocado.
+
+-adjustIntensity: 
+        
+        No lo he tocado. 
+
+- FilterImage arreglado: 
+
+        Error al hacer el padding arreglado.
+        Testeo sobre la imagen de Lenna:
+        -con un filtro de 3x3 con todo 1 (imagen filtrada en blanco)
+        -con un filtro de 3x3 con todo diferentes valores (imagen filtrada en blanco y negro)
+        -con un filtro de 3x3 con todo ceros (imagen filtrada en negro)
+  
+- GaussianFilter: 
+        
+        Con la Imagen de Lenna sale en blanco.
+  
+- MedianFilter:
+
+        Testeado con imagen de Lenna probando con tamaños de filtro 2, 5 y 10 (mientrás más tamaño de filtro más borroso se ve)
+        
+
+- HighBoost:
+        
+        Funciona con median pero falta arreglar el gaussianFilter
+        Testeo sobre imagen morph (para funciones de morfología)
+             
+- Erode:
+
+        Cambiadas condiciones de los if en los bucles for que eran incorrectas. 
+        -Testeado dos matrices de prueba de distintos tamaños.
+        -Testeado con imagen de morfología. (formada por 4s y 255s, tuve que cambiar 4s por 0s)
+        
+- Dilate:
+
+        Cambiadas condiciones de los if en los bucles for que eran incorrectas. 
+        -Testeado dos matrices de prueba de distintos tamaños.
+        -Testeado con imagen de morfología. (formada por 4s y 255s, tuve que cambiar 4s por 0s)
+        
+- Opening: 
+         
+        Es una erosión y luego una dilatación. No cambié nada. Testeado con mismas matrices que dilate.
+        
+- Closing:
+
+       Es una dilatación y luego una erosión. No cambié nada. Testeado con mismas matrices que dilate.
+
+        
+- fill: 
+        
+        Arreglado y testeado con dos matrices distintas y la imagen de morfología.
+        
+- gradient: 
+        
+        La utilizo en edgeCanny parece que está correcto.
+
+- edgeCanny: 
+        
+        Parece que funciona correctamente con imagenes 2 y 5, implementación explicacda detalladamente en comentarios.
+        
+       
